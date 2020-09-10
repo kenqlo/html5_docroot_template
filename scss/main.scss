@@ -1,0 +1,26 @@
+// Main styles
+@import 'base/fonts';
+@import 'base/normalize';
+@import 'base/vars';
+
+:root {
+    --main-text: #333;
+    --main-bg: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --main-text: #e8e8e8;
+        --main-bg: #1c1c1e;
+    }
+}
+
+body {
+    color: var(--main-text);
+    background-color: var(--main-bg);
+    transition: .3s;
+    // font-family: 'Lucida Grande', 'M PLUS 1p', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', '游ゴシック', 'Yu Gothic', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'M PLUS 1p', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
